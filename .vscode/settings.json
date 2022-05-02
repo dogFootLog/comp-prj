@@ -1,0 +1,9 @@
+{
+  "boot-java.scan-java-test-sources.on": true,
+  "boot-java.remote-apps": [],
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn"
+}
