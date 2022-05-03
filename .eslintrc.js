@@ -33,5 +33,6 @@ module.exports = {
     "react/require-default-props": "off",
     "react/jsx-no-useless-fragment": "off",
     "import/prefer-default-export": "off",
+    "no-unused-expressions": "warn",
   },
 };

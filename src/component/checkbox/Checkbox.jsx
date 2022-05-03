@@ -1,17 +1,19 @@
 import React from "react";
-import { bool, string } from "prop-types";
+import { bool, func, string } from "prop-types";
+import "./Checkbox.css";
 
-const Checkbox = ({ checked = false, labelText = "" }) => {
+const Checkbox = ({ checked = false, labelText = "", onClick = null }) => {
   return (
-    <>
-      <input type="checkbox" checked={checked} /> {labelText}
-    </>
+    <div className="checkbox-div">
+      <input type="checkbox" checked={checked} onChange={onClick} /> {labelText}
+    </div>
   );
 };
 
 Checkbox.propTypes = {
   checked: bool,
   labelText: string,
+  onClick: func,
 };
 
 export default Checkbox;

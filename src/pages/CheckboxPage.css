@@ -1,0 +1,10 @@
+.checkbox-page {
+  margin: 40px;
+  padding: 40px;
+  display: block;
+}
+
+.individual-box {
+  display: block;
+  margin-top: 20px;
+}
