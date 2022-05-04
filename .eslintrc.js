@@ -34,5 +34,6 @@ module.exports = {
     "react/jsx-no-useless-fragment": "off",
     "import/prefer-default-export": "off",
     "no-unused-expressions": "warn",
+    "react/react-in-jsx-scope": "off",
   },
 };

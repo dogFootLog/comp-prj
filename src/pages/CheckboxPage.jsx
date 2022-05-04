@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Checkbox } from "../component";
-import "./CheckboxPage.css";
+import { Checkbox } from "../component/checkbox";
+import "./css/CheckboxPage.css";
 
 const CheckboxPage = () => {
   const [checkedAll, setCheckedAll] = useState(false);
