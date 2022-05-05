@@ -1,0 +1,12 @@
+.modal-wrap {
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+  height: 100vh;
+}
+
+.modal-inner {
+  position: relative;
+  background-color: white;
+  z-index: 200;
+}

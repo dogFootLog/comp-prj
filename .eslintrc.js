@@ -35,5 +35,6 @@ module.exports = {
     "import/prefer-default-export": "off",
     "no-unused-expressions": "warn",
     "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
   },
 };
