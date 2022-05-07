@@ -1,4 +1,4 @@
-import { bool, node, string, oneOfType, func } from "prop-types";
+import { bool, node, string, oneOfType, func, object } from "prop-types";
 import "./ModalSimple.css";
 
 const ModalSimple = ({ isOpen = false, contents, xOnClick = null }) => {
@@ -25,7 +25,7 @@ const ModalSimple = ({ isOpen = false, contents, xOnClick = null }) => {
 
 ModalSimple.propTypes = {
   isOpen: bool,
-  contents: oneOfType([string, node]),
+  contents: oneOfType([string, node, func, object]),
   xOnClick: func,
 };
 

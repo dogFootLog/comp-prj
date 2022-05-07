@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
-import Home from "../pages/Home";
-import CheckboxPage from "../pages/CheckboxPage";
-import ModalSimplePage from "../pages/ModalSimplePage";
+import Home from "@/pages/Home";
+import CheckboxPage from "@/pages/CheckboxPage";
+import ModalSimplePage from "@/pages/ModalSimplePage";
 
 const Routes = () => {
   const route = [

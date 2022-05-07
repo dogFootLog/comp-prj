@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { useState } from "react";
-import ModalSimple from "../component/modalSimple/ModalSimple";
-import { MockData } from "../component/mock";
-import "./css/ModalSimplePage.css";
+import ModalSimple from "@/component/modalSimple/ModalSimple";
+import { MockData } from "@/component/mock";
+import { Page } from "@/layouts/page";
 
 const ModalSimplePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const ModalSimplePage = () => {
     setIsOpen(false);
   };
   return (
-    <div className="page-wrap">
+    <Page>
       <button type="button" onClick={handleBtnClick}>
         click!
       </button>
@@ -22,7 +22,7 @@ const ModalSimplePage = () => {
         contents={MockData}
         xOnClick={handleXClick}
       />
-    </div>
+    </Page>
   );
 };
 

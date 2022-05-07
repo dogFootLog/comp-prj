@@ -11,6 +11,7 @@ module.exports = {
           "@/routes": "./src/routes",
           "@/component": "./src/component",
           "@/pages": "./src/pages",
+          "@/layouts": "./src/layouts",
         },
       },
     },
