@@ -1,19 +1,32 @@
-import { bool, node, string, oneOfType } from "prop-types";
+import { bool, node, string, oneOfType, func } from "prop-types";
 import "./ModalSimple.css";
 
-const ModalSimple = ({ isOpen = false, contents }) => {
+const ModalSimple = ({ isOpen = false, contents, xOnClick = null }) => {
   return (
-    isOpen && (
-      <div className="modal-wrap">
-        <div className="modal-inner">{contents}</div>
-      </div>
-    )
+    <div className={isOpen ? "openModal modal" : "modal"}>
+      {isOpen ? (
+        <section>
+          <header>
+            <button type="button" className="close" onClick={xOnClick}>
+              ❌
+            </button>
+          </header>
+          <main>{contents}</main>
+          <footer>
+            <button type="button" className="close" onClick={xOnClick}>
+              close
+            </button>
+          </footer>
+        </section>
+      ) : null}
+    </div>
   );
 };
 
 ModalSimple.propTypes = {
   isOpen: bool,
   contents: oneOfType([string, node]),
+  xOnClick: func,
 };
 
 export default ModalSimple;

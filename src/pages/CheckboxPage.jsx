@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Checkbox } from "../component/checkbox";
+import { Checkbox } from "@/component/checkbox";
 import "./css/CheckboxPage.css";
 
 const CheckboxPage = () => {
