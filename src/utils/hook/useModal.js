@@ -1,15 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
-import { handleModals } from "../redux/modalSlice";
+import { modalActions } from "@/redux/modalSlice";
 
 const useModal = () => {
   const modalState = useSelector((state) => state.modal);
 
   const dispatch = useDispatch();
-  const modalHandler = ({ props }) => {
-    dispatch(handleModals(props));
+  const handleModals = (props) => {
+    dispatch(modalActions(props));
   };
 
-  return [modalState, modalHandler];
+  return { state: modalState, handleModals };
 };
 
 export default useModal;

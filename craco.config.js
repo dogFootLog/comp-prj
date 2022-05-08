@@ -12,7 +12,7 @@ module.exports = {
           "@/component": "./src/component",
           "@/pages": "./src/pages",
           "@/layouts": "./src/layouts",
-          "@/hook": "./src/utils/hook",
+          "@/utils": "./src/utils",
           "@/redux": "./src/utils/redux",
         },
       },

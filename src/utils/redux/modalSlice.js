@@ -8,9 +8,9 @@ const modalSlice = createSlice({
     xOnClick: null,
   },
   reducers: {
-    handleModals: (state, action) => ({ ...state, ...action.payload }),
+    modalActions: (state, action) => ({ ...state, ...action.payload }),
   },
 });
 
-export const handleModals = modalSlice.actions.handleModals;
+export const modalActions = modalSlice.actions.modalActions;
 export default modalSlice.reducer;
