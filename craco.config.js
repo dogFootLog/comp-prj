@@ -12,6 +12,8 @@ module.exports = {
           "@/component": "./src/component",
           "@/pages": "./src/pages",
           "@/layouts": "./src/layouts",
+          "@/hook": "./src/utils/hook",
+          "@/redux": "./src/utils/redux",
         },
       },
     },

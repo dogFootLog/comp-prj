@@ -36,5 +36,7 @@ module.exports = {
     "no-unused-expressions": "warn",
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
+    "prefer-destructuring": "off",
+    "jsx-a11y/control-has-associated-label": "off",
   },
 };

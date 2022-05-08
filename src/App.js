@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Routes from "@/routes/Routes";
+import ModalRedux from "./component/modalRedux/ModalRedux";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes />
       </BrowserRouter>
+      <ModalRedux />
     </div>
   );
 }
