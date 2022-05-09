@@ -3,11 +3,13 @@ import { useModal } from "@/utils/hook";
 import "./ModalRedux.css";
 
 const ModalRedux = () => {
-  const { isOpen, contents } = useModal().state;
+  const { isOpen, contents, xOnClick } = useModal().state;
   const { handleModals } = useModal();
   const handleXClick = useCallback(() => {
+    xOnClick && xOnClick();
     handleModals({ isOpen: false, contents: null, xOnClick: null });
-  }, []);
+  }, [handleModals]);
+
   return (
     <div className={isOpen ? "openModal modal" : "modal"}>
       {isOpen ? (

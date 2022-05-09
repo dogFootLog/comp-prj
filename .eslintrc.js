@@ -33,10 +33,11 @@ module.exports = {
     "react/require-default-props": "off",
     "react/jsx-no-useless-fragment": "off",
     "import/prefer-default-export": "off",
-    "no-unused-expressions": "warn",
+    "no-unused-expressions": "off",
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "prefer-destructuring": "off",
     "jsx-a11y/control-has-associated-label": "off",
+    "no-extra-boolean-cast": "off",
   },
 };
