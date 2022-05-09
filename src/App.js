@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Routes from "@/routes/Routes";
 import ModalRedux from "./component/modalRedux/ModalRedux";
+import { Drawer } from "./component/drawer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes />
       </BrowserRouter>
       <ModalRedux />
+      <Drawer />
     </div>
   );
 }
