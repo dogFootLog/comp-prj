@@ -5,8 +5,8 @@ const useModal = () => {
   const modalState = useSelector((state) => state.modal);
 
   const dispatch = useDispatch();
-  const handleModals = (props) => {
-    dispatch(modalActions(props));
+  const handleModals = (popupArgs) => {
+    dispatch(modalActions(popupArgs));
   };
 
   return { state: modalState, handleModals };
