@@ -40,5 +40,6 @@ module.exports = {
     "jsx-a11y/control-has-associated-label": "off",
     "no-extra-boolean-cast": "off",
     "react/no-unescaped-entities": "off",
+    "react/no-array-index-key": "off",
   },
 };
