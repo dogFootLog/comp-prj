@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 
 const HookTest = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState({ num: 0 });
   useEffect(() => {
     const timer = setInterval(() => {
-      setCounter((prev) => prev + 1);
+      setCounter((prev) => {
+        const v = prev.num + 1;
+        return { num: v };
+      });
     }, 1000);
     return () => {
       clearInterval(timer);
-      alert(counter);
+      alert(counter.num);
     };
-  }, [counter]);
+  }, []);
   return (
     <div>
-      <p>{counter}</p>
+      <p>{counter.num}</p>
     </div>
   );
 };

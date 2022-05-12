@@ -5,6 +5,7 @@ import ModalSimplePage from "@/pages/ModalSimplePage";
 import DropdownPage from "@/pages/DropdownPage";
 import UseStatePage from "@/pages/UseStatePage";
 import UseRefPage from "@/pages/UseRefPage";
+import CssPage from "@/pages/CssPage";
 
 const Routes = () => {
   const route = [
@@ -14,6 +15,7 @@ const Routes = () => {
     { path: "/dropdown", element: <DropdownPage /> },
     { path: "/useRef", element: <UseRefPage /> },
     { path: "/useState", element: <UseStatePage /> },
+    { path: "/css", element: <CssPage /> },
   ];
   const routes = useRoutes(route);
   return routes;
