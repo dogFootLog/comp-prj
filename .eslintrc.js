@@ -41,5 +41,7 @@ module.exports = {
     "no-extra-boolean-cast": "off",
     "react/no-unescaped-entities": "off",
     "react/no-array-index-key": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
   },
 };

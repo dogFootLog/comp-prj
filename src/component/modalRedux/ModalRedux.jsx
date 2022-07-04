@@ -10,10 +10,18 @@ const ModalRedux = () => {
     handleModals({ isOpen: false, contents: null, xOnClick: null });
   }, [handleModals]);
 
+  const bgClick = () => {
+    handleXClick();
+  };
+
+  const modalClick = (e) => {
+    e.stopPropagation();
+  };
+
   return (
-    <div className={isOpen ? "openModal modal" : "modal"}>
+    <div className={isOpen ? "openModal modal" : "modal"} onClick={bgClick}>
       {isOpen ? (
-        <section>
+        <section onClick={modalClick}>
           <header>
             <button type="button" className="close" onClick={handleXClick}>
               ❌
